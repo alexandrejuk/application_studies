@@ -1,0 +1,125 @@
+<div class="container mt-4">
+
+  <div class="row">
+    <div class="col-12">
+      <h5 class="card-title title-page">Entregas</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Gerencie suas entregas</h6>
+    </div>
+
+    <div class="col-6">
+      <div class="card panel">
+        <div class="card-body">
+          <h6 class="card-title">Próxima Entrega</h6>
+          <h5 class="card-subtitle mb-2 text-muted">Clinica Médica Farmacia e saude</h5>
+          <hr>
+          <div class="row">
+              <div class="col-6">
+                <h6></h6>
+                <table class="table">
+                  <tbody>
+                      <tr>
+                          <th scope="row"></th>
+                          <td></td>
+                        </tr>
+                    <tr>
+                      <th scope="row">Distancia:</th>
+                      <td>4 km</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Horário:</th>
+                      <td>08h - 09h</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-6 text-center">
+                <img class="delivery" src="assets/images/delivery.svg" alt="">
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6">
+      <div class="card panel">
+        <div class="card-body">
+          <h6 class="card-title">Perfil</h6>
+          <h5 class="card-subtitle mb-2 text-muted title-user">Samuel Teixeira</h5>
+          <hr>
+          <div class="row">
+            <div class="col-6">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Total de Entrega:</th>
+                    <td>69</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Nota:</th>
+                    <td>4.5</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Horas de Entrega:</th>
+                    <td>540 h</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-6 text-center">
+              <img src="assets/images/medal.png" alt="">
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-4">
+      <div class="card panel">
+        <div class="card-body">
+          <h6 class="card-title">Entregas Concluidas</h6>
+          <h5 class="card-subtitle mb-2 text-muted">Entregas de Hoje</h5>
+          <hr>
+          <div class="row mt-4">
+            <div class="card-body">
+              <p *ngFor="let cc of clientesConcluido"> {{ cc.name }} <br>
+                <small>{{ cc.concluida_em }}</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card panel">
+        <div class="card-body">
+          <h6 class="card-title">Entregas Agendadas</h6>
+          <h5 class="card-subtitle mb-2 text-muted">Entregas agendadas de Hoje</h5>
+          <hr>
+          <div class="row mt-4">
+              <div class="card-body">
+                  <p *ngFor="let cc of clientesConcluido"> {{ cc.name }} {{ cc.horario }}<br> <small>distância: - {{ cc.distancia }}</small></p>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card panel">
+        <div class="card-body">
+          <h6 class="card-title">Horários Disponíveis</h6>
+          <h5 class="card-subtitle mb-2 text-muted">Horários restantes para Hoje</h5>
+          <hr>
+          <div class="row mt-4">
+              <div class="card-body">
+                  <p *ngFor="let h of horarios"> {{ h.hr }} {{ h.status }}</p>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

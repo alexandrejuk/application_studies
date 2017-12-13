@@ -1,0 +1,31 @@
+.panel {
+  border-color: #f7f7f7;
+  /* border-radius: 0; */
+  transition: box-shadow 0.5s;
+}
+.panel:hover {
+  box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.2);
+}
+.panel h5 {
+  font-size: 18px;
+}
+
+.panel card-title {
+  color: #181818;
+}
+
+.title-page {
+  color: #A600D0;
+}
+.table thead tr th, .table tbody tr td {
+    border: none;
+}
+.table th, .table td {
+  border-top: none !important;
+  border-left: none !important;
+}
+
+.delivery{
+  width: 100px;
+  height: auto;
+}
