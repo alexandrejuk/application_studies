@@ -1,12 +1,17 @@
-# Motoboy
+# Sistem of delivery 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+This project was generated to improve the deliverys.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Clone the repo: git remote add origin git@github.com:alexandrejuk/application_studies.git
+2. cd notification
+3. Install packages: npm install
+4. Build project and launch: npm start
+5. Open your browser at: http://localhost:4200
 
+## Screenshot
+![iCalcPage](./screen-shot/delivery-screen.png)
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Author
+[Alexandre dos Santos Soares](https://github.com/alexandrejuk)
