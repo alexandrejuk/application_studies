@@ -1,27 +1,16 @@
 <div class="navbar">
   <div class="container">
-
-    <!-- dropDown Menu -->
     <div class="dropdown">
-
       <button class="dropbtn">
         <i class="fa fa-bars"></i> Menu
         <i class="fa fa-caret-down"></i>
       </button>
-
-      <!-- dynamic Menu -->
       <div class="dropdown-content">
-        <a href="#"
-        *ngFor="let item of menuItems"
-        routerLink="{{ item.path }}"
-        class="{{ item.icon }}"> {{ item.name }}</a>
+        <a href="#" routerLink="home" class="fa fa-bar-chart"> Análise</a>
+        <a href="#" routerLink="moto-boy" class="fa fa-map-marker"> Entregas</a>
+        <a href="#" routerLink="pagamentos" class="fa fa-check-circle-o"> Recebimentos</a>
       </div>
-      <!-- end dynamic -->
-
     </div>
-    <!-- end dropDown Menu -->
-
-    <!-- loggout and notification -->
     <div>
       <button type="button" class="btn">
         <i class="fa fa-bell-o"></i>
@@ -29,7 +18,5 @@
       <button type="button" class="btn">
         <i class="fa fa-power-off"></i> Sair</button>
     </div>
-    <!--  end loggout and notification  -->
-
   </div>
 </div>
