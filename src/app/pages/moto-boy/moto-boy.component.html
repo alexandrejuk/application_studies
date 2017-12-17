@@ -12,210 +12,100 @@
     <div class="col-6">
       <div class="card panel">
         <div class="card-body">
-          <h6 class="card-title">Entrega Atual</h6>
-          <h5 class="card-subtitle mb-2 text-muted text-truncate" title="{{ delivery.name }}">{{ delivery.name }}</h5>
-          <hr>
-          <div class="row">
-            <div class="card-body scrollbar-panel-one" id="style-1">
 
-              <div class="row">
-
-                <div class="col-5">
-                  <p class="h6 card-subtitle" title="{{ delivery.frete }}">
-                    <small>Frete
-                      <br>
-                      <strong>{{ delivery.frete }}</strong>
-                    </small>
-                  </p>
+        <div class="row">
+          <div class="col-12">
+              <form>
+                <div class="row">
+                      <div class="form-group col-12">
+                        <label for="exampleInputEmail1">Local</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrega">
+                        <small id="emailHelp" class="form-text text-muted">Ponto de partida da entrega</small>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input">
+                              Usar Localização Atual
+                            </label>
+                          </div>
+                      </div>
+                        <div class="form-check col-4">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input">
+                              Ida
+                            </label>
+                          </div>
+                          <div class="form-check col-4">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                                Ida e volta
+                              </label>
+                            </div>
                 </div>
 
-                <div class="col-4">
-                  <p class="h6 card-subtitle" title="{{ delivery.tipo }}">
-                    <small>Tipo
-                      <br>
-                      <strong>{{ delivery.tipo }}</strong>
-                    </small>
-                  </p>
-                </div>
+                <div class="row mt-4">
+                  <div class="col-12">
+                    <h6 class="card-subtitle mb-2 text-muted">Dados da entregas</h6>
+                    <small id="emailHelp" class="form-text text-muted">Caixa com Dimesões Máxima  Al: 388mm x Lg: 400mm x Pr: 500mm</small>
+                    <hr>
+                  </div>
 
-                <div class="col-2 text-center">
-                  <img src="assets/images/delivery.svg" alt="" style="height: 75px;">
-                </div>
+                  <div class="form-group col-4">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option disabled="true" >Tipo</option>
+                        <option>Caixa</option>
+                        <option>Envelope</option>
+                        <option>Malote</option>
+                    </select>
+                  </div>
 
-                <div class="col-12">
-                  <p class="h6 card-subtitle" title="{{ delivery.observacao }}">
-                    <small>
-                      <strong>Observação:</strong>
-                      <br> {{ delivery.observacao }}</small>
-                  </p>
-                </div>
 
-                <div class="col-12 mt-4">
-                  <p class="h6 card-subtitle" title="{{ delivery.endereco_retirada }}">
-                    <small>
-                      <strong>Retirada:</strong>
-                      <br> {{ delivery.endereco_retirada }}</small>
-                  </p>
-                  <p class="card-text">
-                    <small class="text-muted-blue">
-                      <i class="fa fa-user"></i> {{ delivery.solicitante_retirada }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <i class="fa fa-clock-o"></i> {{ delivery.horario }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <i class="fa fa-map-marker"></i> {{ delivery.distancia }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R$ {{ delivery.valor_retirada }}</small>
-                  </p>
-                </div>
+                  <div class="form-group col-4">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option disabled="true" >Prioridade</option>
+                        <option>Serv. Comum</option>
+                        <option>Serv. Urgente</option>
 
-                <div class="col-12 mt-2">
-                  <p class="h6 card-subtitle" title="{{ delivery.endereco_entrega }}">
-                    <small>
-                      <strong>Entrega:</strong>
-                      <br> {{ delivery.endereco_entrega }}</small>
-                  </p>
-                  <p class="card-text">
-                    <small class="text-muted-blue">
-                      <i class="fa fa-user"></i> {{ delivery.solicitante_entrega }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <i class="fa fa-clock-o"></i> {{ delivery.horario }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <i class="fa fa-map-marker"></i> {{ delivery.distancia }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; R$ {{ delivery.valor_entrega }}</small>
-                  </p>
-                  <p>
-                    <strong>Total.................................... R$ {{ delivery.valor_retirada + delivery.valor_entrega }}</strong>
-                  </p>
-                  <button type="button" class="btn btn-danger btn-sm">Cancelar</button>
-                  <button type="button" class="btn btn-success btn-sm">Finalizar</button>
+                    </select>
+                  </div>
+                  <div class="form-group col-4">
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option disabled="true" >Pagamento</option>
+                        <option>Dinheiro</option>
+                        <option>Cartão crédito</option>
+                        <option>Cartão Debito</option>
+                      </select>
+                    </div>
+
+                  <div class="form-group col-6">
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Solicitante">
+                  </div>
+
+                  <div class="form-group col-6">
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Observaçao">
+                    <small id="emailHelp" class="form-text text-muted">Ex: conteúdo frágil</small>
+                  </div>
+                  <div class="form-group col-12">
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Entreço da Entrega">
+                    <small id="emailHelp" class="form-text text-muted">Endereço para a entrega</small>
+                  </div>
+
                 </div>
-              </div>
+                  <button type="submit" class="btn btn-primary">+</button>
+                </form>
+          </div>
+
+          <div class="col-12 mt-4">
+              <button type="submit" class="btn btn-danger btn-sm">Cancelar</button>
+              <button type="submit" class="btn btn-success btn-sm">Salvar Entrega</button>
+          </div>
+
+        </div>
+
+
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- end card delivery -->
-
-    <!-- card profile -->
-    <div class="col-6">
-      <div class="card panel">
-        <div class="card-body">
-          <h6 class="card-title">Perfil</h6>
-          <h5 class="card-subtitle mb-2 text-muted title-user text-truncate" title="{{ user.name }}">{{ user.name }}</h5>
-          <hr>
-          <div class="row">
-            <div class="col-8">
-              <table class="table">
-                <tbody>
-                  <tr>
-                    <th scope="row">Total de Entrega:</th>
-                    <td>{{ user.total_delivery || 0 }}</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Nota:</th>
-                    <td>{{ user.vote_average || 0}}</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Horas de Entrega:</th>
-                    <td>{{ user.total_delivery_hours || 0}} h</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="col-4 text-center">
-              <img src="assets/images/medal.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end card profile -->
-
-  </div>
   <!-- end row top -->
 
-
-  <!-- row middle -->
-  <div class="row">
-
-    <!-- card hours -->
-    <div class="col-4 mt-4">
-      <div class="card panel-info">
-        <div class="card-body">
-          <h6 class="card-title">Horaríos</h6>
-          <h5 class="card-subtitle mb-2 text-muted">Disponíveis Hoje</h5>
-          <hr>
-          <div class="row">
-            <div class="card-body scrollbar" id="style-1">
-              <div *ngFor="let hh of horarios">
-                <h5 class="card-title text-truncate">{{ hh.hora }}</h5>
-                <p class="h6 card-subtitle">
-                  <small> {{ hh.status }}</small>
-                </p>
-                <!-- <p class="card-text text-center">
-                  <small class="text-muted-blue">
-                    <i class="fa fa-clock-o"></i> {{ hh.horario }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <i class="fa fa-map-marker"></i> {{ hh.distancia }}</small>
-                </p> -->
-                <hr>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end card hours-->
-
-
-    <!-- card deliverys -->
-    <div class="col-4 mt-4">
-      <div class="card panel-info">
-        <div class="card-body">
-          <h6 class="card-title">Entregas</h6>
-          <h5 class="card-subtitle mb-2 text-muted">Agendadas Hoje</h5>
-          <hr>
-          <div class="row">
-            <div class="card-body scrollbar" id="style-1">
-              <div *ngFor="let cc of clientesConcluido">
-                <h5 class="card-title text-truncate" title="{{ cc.name }}">{{ cc.name }}</h5>
-                <p class="h6 card-subtitle" title="{{ cc.endereco }}">
-                  <small>{{ cc.endereco }}</small>
-                </p>
-                <p class="card-text">
-                  <small class="text-muted-blue">
-                    <i class="fa fa-clock-o"></i> {{ cc.horario }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <i class="fa fa-map-marker"></i> {{ cc.distancia }}</small>
-                </p>
-                <hr>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end  card deliverys -->
-
-    <!-- card done -->
-    <div class="col-4 mt-4">
-      <div class="card panel-info">
-        <div class="card-body">
-          <h6 class="card-title">Entregas</h6>
-          <h5 class="card-subtitle mb-2 text-muted">Concluídas Hoje</h5>
-          <hr>
-          <div class="row">
-            <div class="card-body scrollbar" id="style-1">
-              <div *ngFor="let cc of clientesConcluido">
-                <h5 class="card-title text-truncate" title="{{ cc.name }}">{{ cc.name }}</h5>
-                <p class="h6 card-subtitle" style="color: rgb(8, 145, 85)">
-                  <small>
-                    <i class="fa fa-check"></i> Finalizada à
-                    <strong> {{ cc.concluida_em }}</strong> atrás</small>
-                </p>
-                <hr>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end card done -->
-
-  </div>
-  <!-- end row middle-->
-
-</div>
-<!-- end container -->
