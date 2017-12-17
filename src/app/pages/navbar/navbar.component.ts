@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MENU } from './../../utils/menu-items';
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  public menuItems = [];
+  constructor() {
+    this.menuItems = MENU;
+   }
 
   ngOnInit() {
   }
