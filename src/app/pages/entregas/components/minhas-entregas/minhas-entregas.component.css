@@ -1,0 +1,78 @@
+.panel {
+  border-color: #f7f7f7;
+  border-radius: 0;
+  transition: box-shadow 0.5s;
+  height: 325px;
+}
+.panel:hover {
+  box-shadow: 5px 0px 30px rgba(0, 0, 0, 0.2);
+}
+.panel h5 {
+  font-size: 18px;
+}
+
+.panel card-title {
+  color: #181818;
+}
+
+.title-page {
+  color: #A600D0;
+}
+
+
+#style-1::-webkit-scrollbar {
+  width: 2px;
+}
+#style-1::-webkit-scrollbar-thumb {
+  background-color: #A600D0;
+}
+#style-1::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(214, 100, 199, 0.3);
+}
+
+.text-muted-blue {
+  color: rgb(0, 118, 197);
+}
+
+a {
+  text-decoration: none;
+  color: #181818;
+}
+
+
+.list-deliverys-client {
+  background-color: none;
+  height: 90px;
+  vertical-align: center;
+  padding: 15px 4px 10px 10px;
+}
+.list-deliverys-client:hover {
+  background-color: none;
+  height: 90px;
+  vertical-align: center;
+  padding: 15px 4px 10px 10px;
+  background-color: #E9EBEE;
+  cursor: pointer;
+}
+
+.deliverys-list {
+  height: 530px;
+}
+
+.scrollbar-panel-list {
+  float: left;
+  height: 500px;
+  margin-bottom: 25px;
+  margin-left: 0px;
+
+  width: 65px;
+     overflow-y: scroll;
+}
+
+.card-subtitle {
+  color: rgb(72, 74, 75) !important;
+}
+ ul {
+  list-style-type: none !important;
+  font-size: 14px;
+ }
