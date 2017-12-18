@@ -1,0 +1,71 @@
+<div class="container mt-4">
+  <div class="row">
+
+    <div class="col-12">
+      <h5 class="card-title title-page">Minhas Entregas</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Gerencie suas entregas</h6>
+    </div>
+      <div class="col-6 deliverys-list">
+      <div class="row">
+        <div class="col-12 scrollbar-panel-list" id="style-1">
+          <div *ngFor="let cc of clientesConcluido">
+            <div class="list-deliverys-client">
+              <a href="">
+                <h4 class="card-title text-truncate mb-1" title="{{ cc.name }}">
+                  <strong>{{ cc.name }}</strong>
+                </h4>
+                <p class="h6 card-subtitle" title="{{ cc.endereco }}">
+                  <small>Entrega concluída à 1 dia atrás</small>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="col-6">
+          <div class="card panel">
+            <div class="card-body">
+               <div class="row">
+                <div class="card-body" id="style-1">
+                  <div class="row">
+                   <div class="card-body">
+                      <div class="col-12">
+                        <p class="h6 card-subtitle">
+                          <small>Informações da Entrega</small>
+                        </p>
+                        <h5 class="card-title text-truncate mb-1">
+                          <strong>{{ delivery.name | slice: 0:40 }}...</strong>
+                        </h5>
+                      </div>
+
+                     <div class="col-12 mt-2">
+                       <hr>
+                        <ul class="list-group">
+                            <li><i class="fa fa-check" style="color: rgb(0, 147, 49)"></i> Entrega concluída à 1h atrás</li>
+                            <li><i class="fa fa-check" style="color: rgb(0, 147, 49)"></i> Total de entrega 01</li>
+                            <li><i class="fa fa-check" style="color: rgb(0, 147, 49)"></i> Pagamento Confirmado</li>
+                        </ul>
+                     </div>
+                     <div class="col-12 mt-4 text-center">
+                        <p><small>Ajude-nos a melhorar nosso serviço, avalie!</small></p>
+                       <p>
+                          <i class="fa fa-star-o" style="font-size: 30px"></i>
+                          <i class="fa fa-star-o" style="font-size: 30px"></i>
+                          <i class="fa fa-star-o" style="font-size: 30px"></i>
+                          <i class="fa fa-star-o" style="font-size: 30px"></i>
+                          <i class="fa fa-star-o" style="font-size: 30px"></i>
+                       </p>
+                     </div>
+                   </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+  </div>
+</div>

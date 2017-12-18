@@ -1,0 +1,107 @@
+<!-- container -->
+<div class="container mt-4">
+
+  <!-- row top-->
+  <div class="row">
+    <div class="col-12">
+      <h5 class="card-title title-page">Nova Entrega</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Gerencie suas entregas</h6>
+    </div>
+
+    <!-- card delivery -->
+    <div class="col-6">
+      <div class="card panel">
+        <div class="card-body">
+
+          <div class="row">
+            <div class="col-12">
+              <form>
+                <div class="row">
+                  <div class="form-group col-12">
+                    <label for="exampleInputEmail1">Local</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrega">
+                    <small id="emailHelp" class="form-text text-muted">Ponto de partida da entrega</small>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input"> Usar Localização Atual
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-check col-4">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input"> Ida
+                    </label>
+                  </div>
+                  <div class="form-check col-4">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input"> Ida e volta
+                    </label>
+                  </div>
+                </div>
+
+                <div class="row mt-4">
+                  <div class="col-12">
+                    <h6 class="card-subtitle mb-2 text-muted">Dados da entregas</h6>
+                    <small id="emailHelp" class="form-text text-muted">Caixa com Dimesões Máxima Al: 388mm x Lg: 400mm x Pr: 500mm</small>
+                    <hr>
+                  </div>
+
+                  <div class="form-group col-4">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option disabled="true">Tipo</option>
+                      <option>Caixa</option>
+                      <option>Envelope</option>
+                      <option>Malote</option>
+                    </select>
+                  </div>
+
+
+                  <div class="form-group col-4">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option disabled="true">Prioridade</option>
+                      <option>Serv. Comum</option>
+                      <option>Serv. Urgente</option>
+
+                    </select>
+                  </div>
+                  <div class="form-group col-4">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option disabled="true">Pagamento</option>
+                      <option>Dinheiro</option>
+                      <option>Cartão crédito</option>
+                      <option>Cartão Debito</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-6">
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Solicitante">
+                  </div>
+
+                  <div class="form-group col-6">
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Observaçao">
+                    <small id="emailHelp" class="form-text text-muted">Ex: conteúdo frágil</small>
+                  </div>
+                  <div class="form-group col-12">
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Entreço da Entrega">
+                    <small id="emailHelp" class="form-text text-muted">Endereço para a entrega</small>
+                  </div>
+
+                </div>
+                <button type="submit" class="btn btn-primary">+</button>
+              </form>
+            </div>
+
+            <div class="col-12 mt-4">
+              <button type="submit" class="btn btn-danger btn-sm">Cancelar</button>
+              <button type="submit" class="btn btn-success btn-sm">Salvar Entrega</button>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end row top -->
